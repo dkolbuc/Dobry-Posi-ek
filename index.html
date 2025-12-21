@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dobry Posiłek</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="site-header" id="site-header">
+      <div class="container header__wrap">
+        <nav class="nav" aria-label="Główne menu">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#hero">Home</a></li>
+            <li><a class="nav__link" href="#pilot-success">Sukces pilotażu</a></li>
+            <li><a class="nav__link" href="#what-changes">Co się zmienia?</a></li>
+            <li><a class="nav__link" href="#why-important">Dlaczego to ważne?</a></li>
+            <li><a class="nav__link" href="#poll">Co sądzą o tym Polacy?</a></li>
+            <li><a class="nav__link" href="#faq">Baza wiedzy</a></li>
+            <li><a class="nav__link" href="#petition">Podpisz petycję</a></li>
+            <li><a class="nav__link" href="#petition">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<main>
+ <section id="hero" class="hero" aria-labelledby="hero-title">
+  <div class="hero__layout">
+
+    <!-- Rząd 1: nagłówki + grafika centralna -->
+    <div class="hero__row hero__row--top">
+      <span class="hero__title hero__title-left">Przywróćmy</span>
+      <div class="hero__graphic-center">
+        <img src="assets/hero-main.webp" alt="Dobry Posiłek" class="hero__graphic-img">
+      </div>
+      <span class="hero__title hero__title-right">w szpitalu!</span>
+    </div>
+
+    <!-- Rząd 2: lead + przycisk -->
+    <div class="hero__row hero__row--bottom">
+      <p class="hero__lead">
+        <strong>Podpisz petycję</strong> i chroń<br> szpitalne jedzenie.
+      </p>
+      <a class="btn hero__btn" href="#petition">Podpisz petycję →</a>
+    </div>
+
+  </div>
+
+  <!-- Rząd 3: długi akapit -->
+  <div class="hero__extra-text">
+    „Dobry Posiłek w szpitalu” działał dzięki oddzielnemu finansowaniu. 
+    Teraz pieniądze na żywienie mają trafić do ryczałtu NFZ. 
+    Jeśli zostaną wydane na inne potrzeby, pacjenci już od 1 stycznia 2026 roku 
+    znów mogą otrzymywać ubogie, niesmaczne posiłki.<br> 
+    <strong>Podpisz petycję i domagaj się zagwarantowania środków na szpitalne posiłki!</strong>
+  </div>
+
+  <!-- Grafika boczna -->
+  <div class="hero-side__image">
+    <img src="assets/posilek-1.webp" alt="Dekoracyjna grafika posiłku" class="hero-side__img">
+  </div>
+</section>
+
+  <section id="pilot-success" class="success">
+  <div class="success__inner">
+
+    <!-- Grafika pozycjonowana absolutnie -->
+    <div class="success__image">
+     <img src="assets/sukces-pilot.webp" alt="Sukces pilotażu" />
+        </div>
+
+    <!-- Dwie kolumny tekstowe -->
+    <div class="success__text-columns">
+      <div class="success__column-left">
+        <h2 class="success__title">
+          Sukces pilotażu programu <br><strong>„Dobry Posiłek w szpitalu”</strong>
+        </h2>
+      </div>
+      <div class="success__column-right">
+        <h3 class="success__subtitle">Dane mówią same za siebie.</h3>
+        <p class="success__desc">
+          Pilotażowy rządowy program „Dobry Posiłek w szpitalu” działał od października 2022 roku w 582 szpitalach w Polsce i się sprawdził. Dzięki oddzielnemu finansowaniu pacjenci otrzymywali smaczniejsze, wartościowe i estetyczne posiłki, które realnie wspierały leczenie.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="nutrition-data" class="nutrition">
+  <div class="nutrition__inner">
+
+    <!-- Grafika po lewej -->
+    <div class="nutrition__image">
+        <img src="assets/posilek-dane.webp" alt="Dane żywieniowe" class="nutrition__img">
+    </div>
+
+    <!-- Dane -->
+    <div class="nutrition__table">
+
+      <!-- Nagłówki -->
+      <div class="nutrition__row nutrition__row--header">
+        <div class="nutrition__cell">rok</div>
+        <div class="nutrition__cell">Liczba osobodni</div>
+        <div class="nutrition__cell">Wydatki na żywienie pacjentów</div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="nutrition__row">
+        <div class="nutrition__cell nutrition__year">2023</div>
+
+        <div class="nutrition__cell nutrition__days">
+          <span class="number number--orange">4,53</span>
+          <span class="unit">mln</span>
+        </div>
+
+        <div class="nutrition__cell nutrition__amount">
+          <span class="number number--orange">115,5</span>
+          <span class="unit">mln zł</span>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="nutrition__row">
+        <div class="nutrition__cell nutrition__year">2024</div>
+
+        <div class="nutrition__cell nutrition__days">
+          <span class="number number--orange">34,7</span>
+          <span class="unit">mln</span>
+        </div>
+
+        <div class="nutrition__cell nutrition__amount">
+          <span class="number number--orange">887,1</span>
+          <span class="unit">mln zł</span>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+     <div class="nutrition__row">
+  <div class="nutrition__cell nutrition__year">2025</div>
+
+  <div class="nutrition__cell nutrition__days">
+    <span class="number number--gradient">8,38</span>
+    <span class="unit unit--gradient-dark">mln</span>
+  </div>
+
+  <div class="nutrition__cell nutrition__amount">
+    <span class="number number--gradient">202</span>
+    <span class="unit unit--gradient-dark">mln zł</span>
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="impact" class="impact">
+  <div class="impact__inner">
+
+    <!-- Kolumna tekstowa -->
+    <div class="impact__text">
+      <h2 class="impact__title">
+        Program objął <strong>66%</strong> szpitali w Polsce –
+        <strong>realna poprawa <span class="impact__highlight">jakości posiłków</span></strong>
+        potwierdzona w <strong>582 placówkach</strong>.
+      </h2>
+
+      <!-- Zakreślenie -->
+      <img src="assets/zakreslenie-jakosci.svg" alt="" class="impact__vector">
+    </div>
+
+    <!-- Kolumna z wykresem -->
+    <div class="impact__chart">
+      <img src="assets/posilek-wykres.webp" alt="Wykres kołowy" class="impact__img">
+    </div>
+
+  </div>
+</section>
+
+<section id="menu-duration" class="menu-duration">
+  <div class="menu-duration__inner">
+
+    <div class="menu-duration__image">
+      <img src="assets/jadlospis-grafika.webp" class="menu-duration__img">
+    </div>
+
+    <div class="menu-duration__text">
+      <h2 class="menu-duration__title">
+        Jadłospisy opracowywane<br> przez dietetyków
+        na <span class="menu-duration__highlight">minimum <br>7 dni</span>.
+      </h2>
+
+      <img src="assets/zakreslenie-7dni.svg" class="menu-duration__vector">
+    </div>
+
+  </div>
+</section>
+
+<section id="esthetic" class="esthetic">
+  <div class="esthetic__inner">
+
+    <!-- kolumna tekstowa -->
+    <div class="esthetic__text">
+      <h2 class="esthetic__title">
+        Estetyka dań zwiększyła <strong>apetyt pacjentów</strong>, <br />
+        szczególnie osób osłabionych.
+      </h2>
+
+      <!-- zakreślenie -->
+      <img src="assets/zakreslenie-apetyt.svg" alt="" class="esthetic__vector">
+    </div>
+
+    <!-- kolumna ze zdjęciem -->
+    <div class="esthetic__image">
+      <img src="assets/dobry-posilek-photo.webp" alt="Taca z posiłkiem szpitalnym" class="esthetic__img">
+    </div>
+
+    <!-- grafika nachodząca na kolejną sekcję -->
+    <div class="esthetic__overlay">
+        <img src="assets/danie.webp" alt="Dekoracyjna grafika dania" class="esthetic__overlay-img">
+    </div>
+
+  </div>
+
+  
+</section>
+
+<section id="why-important" class="why-important">
+  <div class="why-important__inner">
+
+    <!-- grafika pomarańczowego wykrzyknika-->
+    <div class="why-important__image">
+      <img src="assets/wykrzyknik.webp" alt="Dekoracyjny pomarańczowy wykrzyknik" class="why-important__img">
+    </div>
+  
+    <!-- nagłówek -->
+    <div class="why-important__header">
+      <h2 class="why-important__intro">Dlaczego to ważne?</h2>
+      <p class="why-important__title">
+        Zdrowy posiłek to szybszy powrót do zdrowia
+      </p>
+    </div>
+
+    <!-- UKŁAD 2 KOLUMN FLEX -->
+    <div class="why-important__columns">
+
+      <!-- LEWA KOLUMNA -->
+      <div class="why-important__col why-important__col--left">
+
+        <!-- KAFELKI LEWEJ KOLUMNY -->
+        <!-- 1 -->
+        <div class="why-item why-item--open">
+          <div class="why-item__card">
+            <p class="why-item__text">
+              Kontrole NIK i Sanepidu (2022 r.) wykazały: przed pilotażem szpitalne posiłki były niesmaczne, monotonne, zbyt słone i ubogie w białko i warzywa.
+            </p>
+            <p class="why-item__text-smaller">
+              W 2023 r. u 30% pacjentów przyjmowanych do szpitala stwierdzono niedożywienie.
+            </p>
+
+            <button class="why-item__toggle">
+              Źródła <span class="why-item__arrow">→</span>
+            </button>
+          </div>
+
+          <div class="why-item__panel">
+            <p class="why-item__panel-label">Źródło</p>
+            <p class="why-item__panel-source">Polskie Towarzystwo Żywienia Pozajelitowego, Dojelitowego i Metabolizmu (POLSPEN), cytowane w Medicalpress.pl i Portal Samorządowy (2023).</p>
+            <p class="why-item__panel-small">https://medicalpress.pl/aktualnosci/niedoywienie-w-szpitalach-30-proc-pacjentw-trafia-na-oddziay-w-zym-stanie-odywienia-dlaczego-ywienie-kliniczne-jest-kluczowe-w-leczeniu_NlRLVnmAGe/</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="why-item">
+          <div class="why-item__card">
+            <p class="why-item__text">
+              Śmiertelność pacjentów niedożywionych wynosiła 12,4%, w porównaniu do poziomu 4,7% pacjentów dożywionych.
+            </p>
+
+            <button class="why-item__toggle">
+              Źródła <span class="why-item__arrow">→</span>
+            </button>
+          </div>
+
+          <div class="why-item__panel">
+            <p class="why-item__panel-label">Źródło</p>
+            <p class="why-item__panel-source">Akademia Nutricia, "Nieprawidłowy stan odżywienia po zakończeniu leczenia szpitalnego – ocena konsekwencji zdrowotnych", EconMed Europe</p>
+            <p class="why-item__panel-small">https://akademianutricia.pl/pdf/2022/Nieprawidlowy-stan-odzywienia-po-zakonczeniu-leczenia-szpitalnego%E2%80%93ocena-konsekwencji-zdrowotnych.pdf</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="why-item">
+          <div class="why-item__card">
+            <p class="why-item__text">
+              Dieta kliniczna to nie dodatek! To ważny element leczenia.
+            </p>
+
+            <button class="why-item__toggle">
+              Źródła <span class="why-item__arrow">→</span>
+            </button>
+          </div>
+
+          <div class="why-item__panel">
+            <p class="why-item__panel-label">Źródło</p>
+            <p class="why-item__panel-source">Akademia Nutricia, "Nieprawidłowy stan odżywienia po zakończeniu leczenia szpitalnego – ocena konsekwencji zdrowotnych", EconMed Europe</p>
+            <p class="why-item__panel-small">https://akademianutricia.pl/pdf/2022/Nieprawidlowy-stan-odzywienia-po-zakonczeniu-leczenia-szpitalnego%E2%80%93ocena-konsekwencji-zdrowotnych.pdf</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PRAWA KOLUMNA -->
+      <div class="why-important__col why-important__col--right">
+
+        <!-- 2 -->
+        <div class="why-item">
+          <div class="why-item__card">
+            <p class="why-item__text">
+              11% rozwijało niedożywienie szpitalne podczas pobytu
+            </p>
+
+            <button class="why-item__toggle">
+              Źródła <span class="why-item__arrow">→</span>
+            </button>
+          </div>
+
+          <div class="why-item__panel">
+            <p class="why-item__panel-label">Źródło</p>
+            <p class="why-item__panel-source">Polskie Towarzystwo Żywienia Pozajelitowego, Dojelitowego i Metabolizmu (POLSPEN), cytowane w Medicalpress.pl i Portal Samorządowy (2023)</p>
+            <p class="why-item__panel-small">https://medicalpress.pl/aktualnosci/niedoywienie-w-szpitalach-30-proc-pacjentw-trafia-na-oddziay-w-zym-stanie-odywienia-dlaczego-ywienie-kliniczne-jest-kluczowe-w-leczeniu_NlRLVnmAGe/</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="why-item">
+          <div class="why-item__card">
+            <p class="why-item__text">
+              Leczenie niedożywionego pacjenta jest 3x droższe.
+            </p>
+
+            <button class="why-item__toggle">
+              Źródła <span class="why-item__arrow">→</span>
+            </button>
+          </div>
+
+          <div class="why-item__panel">
+            <p class="why-item__panel-label">Źródło</p>
+            <p class="why-item__panel-source">Rynek Zdrowia / ISB Zdrowie (2024)</p>
+            <p class="why-item__panel-small">https://www.rynekzdrowia.pl/Finanse-i-zarzadzanie/Zywienie-medyczne-moze-obnizyc-koszty-hospitalizacji-nawet-o-36-Dlaczego-jest-takie-wazne,262882,1.html</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="why-item">
+          <div class="why-item__card">
+            <p class="why-item__text">
+              Dobrze odżywiony pacjent szybciej wraca do zdrowia, rzadziej doświadcza powikłań i spędza mniej dni na oddziale.
+            </p>
+
+            <button class="why-item__toggle">
+              Źródła <span class="why-item__arrow">→</span>
+            </button>
+          </div>
+
+          <div class="why-item__panel">
+            <p class="why-item__panel-label">Źródło</p>
+            <p class="why-item__panel-source">Akademia Nutricia, "Nieprawidłowy stan odżywienia po zakończeniu leczenia szpitalnego – ocena konsekwencji zdrowotnych", EconMed Europe</p>
+            <p class="why-item__panel-small">https://akademianutricia.pl/pdf/2022/Nieprawidlowy-stan-odzywienia-po-zakonczeniu-leczenia-szpitalnego%E2%80%93ocena-konsekwencji-zdrowotnych.pdf</p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="why-item">
+          <div class="why-item__card">
+            <p class="why-item__text">
+              Największe badanie związku między jakością szpitalnego jedzenia a wynikami leczenia pokazuje: pacjenci niezadowoleni z posiłków mają 1,4x większe ryzyko powikłań i prawie 2x większe ryzyko opóźnionego wypisu ze szpitala.
+            </p>
+
+            <button class="why-item__toggle">
+              Źródła <span class="why-item__arrow">→</span>
+            </button>
+          </div>
+
+          <div class="why-item__panel">
+            <p class="why-item__panel-label">Źródło</p>
+            <p class="why-item__panel-small">https://pubmed.ncbi.nlm.nih.gov/39098606/</p>
+          </div>
+        </div>
+
+         <!-- grafika kapusty-->
+         <div class="why-important__cabbage">
+              <img src="assets/kapusta-2.webp" alt="Dekoracyjna kapusta" class="why-important__cabbage-img">
+         </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="what-changes" class="what-changes">
+  <div class="what-changes__inner">
+
+    <!-- LEWA KOLUMNA -->
+    <div class="what-changes__col what-changes__col--left">
+      <h2 class="what-changes__heading">Co się zmienia?</h2>
+      <p class="what-changes__subheading">Ambitne cele bez gwarancji finansowania</p>
+      <p class="what-changes__text">
+        Ministerstwo Zdrowia chce wprowadzić rygorystyczne standardy jakościowe żywienia (konsultacje dietetyczne, określona kaloryczność, normy jakości produktów, publikacja zdjęć posiłków) w całej sieci placówek w Polsce, ale jednocześnie zamierza zlikwidować oddzielny budżet na żywienie. Pieniądze na ten cel trafią do ryczałtu szpitala na usługi NFZ, czyli do budżetu, z którego finansowane są wszystkie wydatki szpitala.
+      </p>
+    </div>
+
+    <!-- ŚRODKOWA KOLUMNA -->
+
+    <div class="what__changes__col what-changes__col--middle">
+        <div class="what-changes__image">
+        <img src="assets/kiwi.webp" alt="Dekoracyjna grafika kiwi" class="what-changes__img">
+    </div>
+    </div>
+
+    <!-- PRAWA KOLUMNA -->
+    <div class="what-changes__col what-changes__col--right">
+
+      <!-- KARTA 01 -->
+      <div class="what-changes__card what-changes__card--yellow">
+        <h3 class="what-changes__card-heading">01.</h3>
+        <p class="what-changes__card-text">
+          Bez wyodrębnionej puli finansowej środki przeznaczone na żywienie będą mogły być wydawane na inne potrzeby szpitala np. media, pensje dla personelu, spłatę zobowiązań.
+        </p>
+      </div>
+
+      <!-- KARTA 02 -->
+      <div class="what-changes__card what-changes__card--gradient">
+        <h3 class="what-changes__card-heading">02.</h3>
+        <p class="what-changes__card-text">
+          W efekcie wymagania jakościowe wzrosną „na papierze”, ale jakość szpitalnego jedzenia może szybko wrócić do poziomu sprzed pilotażu. Znów pacjenci będą jeść posiłki niesmaczne, nieestetyczne i ubogie w wartości odżywcze.
+        </p>
+      </div>
+
+    <!-- grafika worka większego-->
+    <div class="what-changes__image-bigger">
+      <img src="assets/worek.webp" alt="Dekoracyjny worek z pieniędzmi" class="what-changes__img-bigger">
+    </div>
+
+     <!-- grafika worka mniejszego-->
+    <div class="what-changes__image-smaller">
+      <img src="assets/worek.webp" alt="Mały dekoracyjny worek z pieniędzmi" class="what-changes__img-smaller">
+    </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="poll" class="poll">
+    <div class="poll__inner">
+  
+    <!-- nagłówek -->
+        <div class="poll__header">
+            Co sądzą o tym Polacy?
+        </div>
+
+        <div class="poll__text">
+            <p>Przy współpracy z Ogólnopolską Grupą Badawczą w grudniu 2025 roku zrealizowaliśmy badanie opinii publicznej na temat stosunku Polaków do żywienia szpitalnego i zamknięcia programu „Dobry Posiłek w szpitalu”.</p>
+            <p>Wnioski są bardzo czytelne:</p>
+            <ol>
+                <li>Ponad 86% Polaków domaga się kontynuowania programu „Dobry Posiłek w szpitalu”.</li>
+                <li>60% ankietowanych uważa, że zakończenie pilotażu programu pogorszy jakość szpitalnego jedzenia..</li>
+                <li>66% Polaków jest zdania, że wartościowe jedzenia wspiera proces leczenia.</li>
+            </ol>
+            <p>
+                Wyniki badania pokazują, że mamy do czynienia z powszechnym, ponadpartyjnym i ponadpokoleniowym poparciem społecznym dla kontynuacji programu – <strong>niemal 9 na 10 Polaków chce, by „Dobry posiłek w szpitalu” pozostał.</strong>
+            </p>
+             <button class="poll__btn">
+              Pobierz raport →
+            </button>
+        </div>
+          <div class="poll__grid">
+
+      <!-- LEWA KOLUMNA -->
+      <div class="poll__item">
+        <a href="assets/badanie-1.webp" class="poll__lightbox-trigger">
+  <img src="assets/badanie-1.webp" class="poll__img">
+</a>
+      </div>
+
+      <!-- PRAWA KOLUMNA -->
+      <div class="poll__item">
+       <a href="assets/badanie-2.webp" class="poll__lightbox-trigger">
+  <img src="assets/badanie-2.webp" class="poll__img">
+</a>
+      </div>
+
+    </div>
+
+    <!-- DOLNY OBRAZEK -->
+    <div class="poll__bottom">
+     <a href="assets/badanie-3.webp" class="poll__lightbox-trigger">
+  <img src="assets/badanie-3.webp" class="poll__img">
+</a>
+    </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="faq__inner">
+    <h2 class="faq__heading">Baza wiedzy/FAQ</h2>
+  </div>
+
+  <div class="faq__accordion-wrapper">
+
+    <div class="faq__accordion">
+
+      <!-- PIERWSZY ELEMENT -->
+      <div class="faq__item">
+        <button class="faq__question">
+          <span class="faq__question-text">Przykładowe pytanie do sekcji baza wiedzy/FAQ</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Przykładowa odpowiedź do sekcji baza wiedzy/FAQ<br>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+        </div>
+      </div>
+
+      <!-- KOLEJNE ELEMENTY -->
+      <div class="faq__item">
+        <button class="faq__question">
+          <span class="faq__question-text">Przykładowe pytanie do sekcji baza wiedzy/FAQ</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Przykładowa odpowiedź do sekcji baza wiedzy/FAQ<br>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          <span class="faq__question-text">Przykładowe pytanie do sekcji baza wiedzy/FAQ</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Przykładowa odpowiedź do sekcji baza wiedzy/FAQ<br>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          <span class="faq__question-text">Przykładowe pytanie do sekcji baza wiedzy/FAQ</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Przykładowa odpowiedź do sekcji baza wiedzy/FAQ<br>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+        </div>
+      </div>
+
+    </div> <!-- KONIEC faq__accordion -->
+
+    <!-- grafika pytajnika -->
+    <div class="faq__image">
+      <img src="assets/pytajnik.webp" alt="Czerwony pytajnik" class="faq__img">
+    </div>
+
+  </div>
+</section>
+
+<section id="cta" class="cta">
+  <div class="cta__inner">
+
+    <h2 class="cta__heading">Podpisz petycję</h2>
+    <h3 class="cta__subheading">Nie pozwólmy, by polscy pacjenci stracili Dobry Posiłek!</h3>
+
+    <div class="cta__text-wrapper">
+      <p class="cta__text">
+        Domagamy się, aby środki na żywienie pacjentów pozostały wyodrębnione i nie były przerzucane na inne potrzeby szpitala.
+      </p>
+    </div>
+
+    <a href="#!" class="cta__button">Podpisz petycję →</a>
+
+    <!-- Dekoracje -->
+    <div class="cta__image cta__image--apple">
+      <img src="assets/apple.webp" alt="Jabłko" class="cta__img">
+    </div>
+
+    <div class="cta__image cta__image--broccoli">
+      <img src="assets/broccoli.webp" alt="Brokuł" class="cta__img">
+    </div>
+
+    <div class="cta__image cta__image--soup">
+      <img src="assets/soup.webp" alt="Zupa" class="cta__img">
+    </div>
+
+    <div class="cta__image cta__image--hand">
+      <img src="assets/hand.webp" alt="Ręka podpisująca petycję" class="cta__img">
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
