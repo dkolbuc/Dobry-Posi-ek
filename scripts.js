@@ -152,17 +152,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* mobile nav */
+// mobile nav behavior
 
-<script>
-  const headerWrap = document.querySelector('.header__wrap');
-  const toggle = document.querySelector('.nav__toggle');
-  const icon = document.querySelector('.nav__toggle-icon');
+const headerWrap = document.querySelector('.header__wrap');
+const toggle = document.querySelector('.nav__toggle');
+const icon = document.querySelector('.nav__toggle-icon');
 
-  toggle.addEventListener('click', () => {
-    const isOpen = headerWrap.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', isOpen);
+toggle.addEventListener('click', () => {
+  const isOpen = headerWrap.classList.toggle('is-open');
+  toggle.setAttribute('aria-expanded', isOpen);
+});
 
-    icon.textContent = isOpen ? '×' : '+';
+// Zamykanie menu po kliknięciu w link
+const navLinks = document.querySelectorAll('.nav__list .nav__link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Zamknij menu
+    headerWrap.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', false);
+
+    // Przywróć ikonę +
+    icon.style.transform = 'rotate(0deg)';
   });
-</script>
+});
