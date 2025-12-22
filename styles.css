@@ -15,6 +15,10 @@
   --transition: 220ms cubic-bezier(.2,.9,.3,1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--font-family);
@@ -1353,4 +1357,102 @@ body {
   width: 147px;
   bottom: -40%;
   right: 60%;
+}
+
+/* ============================
+   MOBILE STYLES
+   ============================ */
+
+/* MOBILE NAV */
+
+@media (max-width: 768px) {
+
+  /* ukrycie nav desktop */
+  .nav__list {
+    display: none;
+  }
+
+  /* Kontener headera */
+  .site-header {
+    margin-top: 30px; /* breathing space */
+    height: auto;
+    padding: 0 16px;
+  }
+
+  .header__wrap {
+    width: 400px;
+    padding: 0;
+    border-radius: 31px;
+    border: 2px solid var(--christine);
+    background: var(--papaya-whip);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 600ms ease-in-out;
+  }
+
+  /* TOGGLE (stan zwinięty) */
+  .nav__toggle {
+    width: 100%;
+    height: 66px;
+    padding: 0 48px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--nero);
+    cursor: pointer;
+  }
+
+  .nav__toggle-icon {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  /* MENU ROZWINIĘTE */
+  .header__wrap.is-open {
+    height: 300px; /* pełna wysokość */
+    padding: 22px 48px;
+  }
+
+  .header__wrap.is-open .nav__toggle {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .header__wrap.is-open .nav__toggle-text {
+    font-weight: 700;
+  }
+
+  .header__wrap.is-open .nav__toggle-icon {
+    transform: rotate(45deg);
+  }
+
+  /* Lista linków */
+  .header__wrap.is-open .nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header__wrap.is-open .nav__link {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--nero);
+    background: transparent;
+    border-radius: 0;
+    transform: none;
+  }
+
+  .header__wrap.is-open .nav__link:hover {
+    background: transparent;
+    transform: none;
+  }
 }
