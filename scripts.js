@@ -151,3 +151,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+/* mobile nav */
+
+<script>
+  const headerWrap = document.querySelector('.header__wrap');
+  const toggle = document.querySelector('.nav__toggle');
+  const icon = document.querySelector('.nav__toggle-icon');
+
+  toggle.addEventListener('click', () => {
+    const isOpen = headerWrap.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', isOpen);
+
+    icon.textContent = isOpen ? '×' : '+';
+  });
+</script>
