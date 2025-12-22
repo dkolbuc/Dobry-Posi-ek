@@ -121,7 +121,14 @@ body {
   color: #fff;
 }
 
+/* nav__toogle niewidoczny na desktop */
+
+.nav__toggle {
+  display: none;
+}
+
 /* Hero section */
+
 /* HERO WRAPPER */
 .hero {
   position: relative;
@@ -1250,7 +1257,7 @@ body {
   object-fit: cover;
 }
 
-/* sekcja faq */
+/* sekcja cta */
 
 .cta {
   background-color: var(--bridal);
@@ -1432,7 +1439,7 @@ body {
   }
 
   .header__wrap.is-open .nav__toggle-text {
-    font-weight: 700;
+    font-weight: 400;
   }
 
   .header__wrap.is-open .nav__toggle-icon {
@@ -1462,5 +1469,1178 @@ body {
   .header__wrap.is-open .nav__link:hover {
     background: transparent;
     transform: none;
+  }
+}
+
+/* ============================
+   HERO — MOBILE VERSION
+   ============================ */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero__layout {
+    max-width: 100%;
+  }
+
+  /* RZĄD 1 — nagłówki + grafika */
+  .hero__row--top {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Grafika centralna — 20px od lewej i prawej */
+  .hero__graphic-center {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero__graphic-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* RZĄD 2 — lead + przycisk */
+  .hero__row--bottom {
+    flex-direction: column;
+    gap: 20px;
+    margin: 32px 0;
+  }
+
+  .hero__lead {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero__lead strong {
+    font-weight: 700;
+  }
+
+  .hero__btn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    padding: 12px 24px;
+  }
+
+  /* DŁUGI AKAPIT */
+  .hero__extra-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 135%;
+    margin-top: 24px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  /* GRAFIKA BOCZNA — 145px, wyrównana do prawej */
+  .hero-side__image {
+    position: absolute;
+    width: 145px;
+    right: 0;
+    top: auto;
+    bottom: 40px; /* na wysokości przycisku */
+    z-index: 0;
+  }
+
+  .hero-side__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ============================
+   SUKCES PILOTAŻU — MOBILE
+   ============================ */
+@media (max-width: 768px) {
+
+  .success {
+    padding: 60px 20px;
+  }
+
+  .success__inner {
+    max-width: 100%;
+  }
+
+  /* Grafika po lewej — ukryta lub przesunięta */
+  .success__image {
+    position: absolute;
+    width: 145px;
+    height: auto;
+    left: 0;
+    top: auto;
+    bottom: 20px;
+    z-index: 0;
+  }
+
+  .success__image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Kolumny → jedna kolumna */
+  .success__text-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .success__column-left,
+  .success__column-right {
+    max-width: 100%;
+    flex: none;
+  }
+
+  /* Nagłówek główny */
+  .success__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 89%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .success__title strong {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 8px;
+  }
+
+  /* Podtytuł */
+  .success__subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  /* Akapit */
+  .success__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+    text-align: center;
+  }
+}
+
+/* ============================
+   ŻYWIENIE — MOBILE VERSION
+   ============================ */
+@media (max-width: 768px) {
+
+  .nutrition {
+    padding: 60px 20px; /* 20px z lewej i prawej – pokazujemy tło / gradient */
+  }
+
+  .nutrition__inner {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* Grafika – mniejsza, ale dalej „doklejona” z lewej */
+  .nutrition__image {
+    width: 180px;
+    height: 180px;
+    left: -30px;
+    top: -40px;
+  }
+
+  .nutrition__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Tabela – dalej 3 kolumny, tylko ciaśniej */
+  .nutrition__table {
+    margin-top: 40px;
+    gap: 16px;
+  }
+
+  .nutrition__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .nutrition__cell {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /* Nagłówki – małe, jak w Figma */
+  .nutrition__row--header .nutrition__cell {
+    margin-bottom: 16px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 106%;
+    color: var(--boulder);
+  }
+
+  /* Rok */
+  .nutrition__year {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 106%;
+    color: var(--nero);
+  }
+
+  /* Liczby i jednostki – mniejsze, ale z tym samym stylingiem kolorów/gradientów */
+  .number,
+  .unit {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 106%;
+  }
+
+  /* Ułożenie liczba + jednostka */
+  .nutrition__days,
+  .nutrition__amount {
+    gap: 4px;
+  }
+}
+
+/* ============================
+   IMPACT — MOBILE VERSION
+   ============================ */
+
+@media (max-width: 768px) {
+
+  .impact {
+    padding: 40px 20px;
+    border-radius: 0 0 32px 32px;
+    background: linear-gradient(180deg, #FFFBF4 0%, #FFF0D3 100%);
+  }
+
+  .impact__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 49px; /* dokładnie jak w Figma */
+  }
+
+  /* LEWA KOLUMNA – TEKST */
+  .impact__text {
+    width: 142px;
+    flex: 0 0 142px;
+    position: relative;
+  }
+
+  .impact__title {
+    width: 100%;          /* nadpisanie width: 478px z desktopu */
+    max-width: 142px;     /* pilnuje, żeby tekst NIE wychodził poza kolumnę */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 106%;
+    text-align: left;
+  }
+
+  .impact__title strong {
+    font-weight: 700;
+  }
+
+  .impact__vector {
+    width: 140px;
+    left: 0;
+    top: 58%;
+    transform: translateY(-50%);
+  }
+
+  /* PRAWA KOLUMNA – WYKRES */
+  .impact__chart {
+    width: 179px;
+    height: 104px;
+    flex: 0 0 179px;
+  }
+
+  .impact__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ============================
+  MENU DURATION
+   ============================ */
+
+   @media (max-width: 768px) {
+
+  .menu-duration {
+    padding: 40px 20px 80px 20px;
+    border-radius: 0 0 32px 32px;
+    background-color: #FEE0AA;
+  }
+
+  .menu-duration__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px; /* realny odstęp na mobilce */
+    max-width: 100%;
+  }
+
+  /* LEWA KOLUMNA – GRAFIKA */
+  .menu-duration__image {
+    position: relative;
+    width: 162px;
+    height: auto;
+    top: 0;
+    left: 0;
+    flex: 0 0 162px;
+    z-index: 2;
+  }
+
+  .menu-duration__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* PRAWA KOLUMNA – TEKST */
+  .menu-duration__text {
+    flex: 0 0 142px;
+    max-width: 142px;
+    position: relative;
+  }
+
+  .menu-duration__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 106%;
+    text-align: right;
+    width: 100%;
+    max-width: 142px;
+  }
+
+  .menu-duration__highlight {
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-duration__vector {
+    position: absolute;
+    width: 160px;
+    height: auto;
+    right: 0;
+    top: 58%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+/* ============================
+   SEKCJA ESTHETIC
+   ============================ */
+
+   @media (max-width: 768px) {
+
+  .esthetic {
+    padding: 40px 20px 80px 20px;
+    border-radius: 0 0 32px 32px;
+    background-color: #FFF0D3;
+    position: relative;
+  }
+
+  .esthetic__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 49px;
+    max-width: 100%;
+  }
+
+  /* LEWA KOLUMNA – TEKST */
+  .esthetic__text {
+    width: 142px;
+    flex: 0 0 142px;
+    position: relative;
+  }
+
+  .esthetic__title {
+    width: 100%;
+    max-width: 142px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 106%;
+    text-align: left;
+  }
+
+  .esthetic__title strong {
+    font-weight: 700;
+  }
+
+  .esthetic__vector {
+    width: 140px;
+    height: auto;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* PRAWA KOLUMNA – ZDJĘCIE */
+  .esthetic__image {
+    width: 189px;
+    height: 141px;
+    flex: 0 0 189px;
+  }
+
+  .esthetic__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+  }
+
+  /* OVERLAY – GRAFIKA DANIA */
+  .esthetic__overlay {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .esthetic__overlay-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* ============================
+  WHY IMPORTANT
+   ============================ */
+
+   @media (max-width: 768px) {
+
+  /* SEKCJA */
+  .why-important {
+    padding: 40px 20px 80px 20px;
+    background: var(--bridal);
+    overflow: hidden;
+  }
+
+  .why-important__inner {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  /* GRAFIKA WYKRZYKNIKA W TLE */
+  .why-important__image {
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    right: -40px;
+    top: -20px;
+    transform: rotate(15deg);
+    opacity: 0.25;
+    z-index: 0;
+  }
+
+  .why-important__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* NAGŁÓWEK */
+  .why-important__header {
+    max-width: 100%;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .why-important__intro {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  .why-important__title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+  }
+
+  /* KOLUMNY → NA MOBILE JEDNA KOLUMNA */
+  .why-important__columns {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    z-index: 2;
+  }
+
+  .why-important__col {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* KAFELKI */
+  .why-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+  }
+
+  /* KARTA */
+  .why-item__card {
+    width: 100%;
+    background-color: var(--cape);
+    border-radius: 24px;
+    padding: 20px 24px;
+    box-shadow: 0px 3px 6px rgba(125, 125, 125, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* TEKSTY W KAFELKU */
+  .why-item__text {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--nero);
+  }
+
+  .why-item__text-smaller {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--nero);
+  }
+
+  /* PRZYCISK ŹRÓDŁA */
+  .why-item__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px;
+    background-color: var(--christine);
+    color: var(--bridal);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .why-item__arrow {
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  /* PANEL ROZWIJANY */
+  .why-item__panel {
+    width: 100%;
+    background-color: var(--christine);
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    padding: 12px 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .why-item--open .why-item__panel {
+    max-height: 500px;
+  }
+
+  /* TEKSTY W PANELU */
+  .why-item__panel-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 106%;
+    color: var(--bridal);
+    margin-bottom: 6px;
+  }
+
+  .why-item__panel-source {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 106%;
+    color: var(--bridal);
+    margin-bottom: 6px;
+  }
+
+  .why-item__panel-small {
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 106%;
+    color: var(--bridal);
+  }
+
+  /* GRAFIKA KAPUSTY */
+  .why-important__cabbage {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: -40px;
+    bottom: -40px;
+    opacity: 0.35;
+    z-index: 0;
+  }
+
+  .why-important__cabbage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ============================
+  WHAT CHANGES
+   ============================ */
+
+@media (max-width: 768px) {
+
+  .what-changes {
+    background-color: var(--bridal);
+    padding: 40px 20px 80px 20px;
+    position: relative;
+  }
+
+  .what-changes__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* LEWA KOLUMNA – NAGŁÓWKI + TEKST */
+  .what-changes__col--left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .what-changes__heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+  }
+
+  .what-changes__subheading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+    color: var(--nero);
+  }
+
+  .what-changes__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+    text-align: left;
+    color: var(--boulder);
+    margin: 0;
+  }
+
+  /* ŚRODKOWA KOLUMNA – GRAFIKA KIWI */
+  .what-changes__col--middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .what-changes__image {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    transform: scaleX(-1);
+    z-index: 1;
+  }
+
+  .what-changes__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* PRAWA KOLUMNA – KARTY */
+  .what-changes__col--right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .what-changes__card {
+    padding: 48px 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .what-changes__card-heading {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--christine);
+    margin-bottom: 12px;
+  }
+
+  .what-changes__card-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--nero);
+    margin: 0;
+  }
+
+  .what-changes__card--yellow {
+    background-color: #FEE0AA;
+  }
+
+  .what-changes__card--gradient {
+    background: linear-gradient(to bottom, #FFF0D3, #FFFBF4);
+    margin-top: -12px;
+  }
+
+  /* GRAFIKA WORKA WIĘKSZEGO */
+  .what-changes__image-bigger {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: -40px;
+    bottom: -20px;
+    transform: rotate(-13deg);
+    z-index: 0;
+    opacity: 0.3;
+  }
+
+  .what-changes__img-bigger {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* GRAFIKA WORKA MNIEJSZEGO */
+  .what-changes__image-smaller {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: -20px;
+    bottom: -10px;
+    transform: rotate(15deg);
+    z-index: 0;
+    opacity: 0.3;
+  }
+
+  .what-changes__img-smaller {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ============================
+   SEKCJA POLL
+   ============================ */
+
+   @media (max-width: 768px) {
+
+  .poll {
+    background: var(--bridal);
+    padding: 40px 20px 80px 20px;
+    overflow: hidden;
+  }
+
+  .poll__inner {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .poll__header {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--nero);
+    margin: 0;
+  }
+
+  .poll__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+    color: var(--boulder);
+  }
+
+  .poll__text p,
+  .poll__text ol,
+  .poll__text li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+    margin-bottom: 12px;
+  }
+
+  .poll__text strong {
+    font-weight: 700;
+  }
+
+  .poll__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 24px;
+    background-color: var(--christine);
+    color: var(--bridal);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  /* OBRAZKI – UKŁAD JEDEN POD DRUGIM */
+  .poll__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .poll__item,
+  .poll__bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .poll__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px;
+    border: 2px solid #21467e;
+    display: block;
+  }
+
+  /* LIGHTBOX – dopasowanie do mobilki */
+  .poll__lightbox-trigger {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ============================
+   SEKCJA FAQ
+   ============================ */
+
+   @media (max-width: 768px) {
+
+  .faq {
+    background-color: var(--bridal);
+    padding: 40px 20px 80px 20px;
+  }
+
+  /* NAGŁÓWEK — WYŚRODKOWANIE + ODSTĘP */
+  .faq__inner {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* <-- wycentrowanie nagłówka */
+    gap: 32px; /* <-- odstęp między nagłówkiem a akordeonem */
+  }
+
+  .faq__heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    text-align: center; /* <-- dodatkowe zabezpieczenie */
+  }
+
+  /* WRAPPER AKORDEONU */
+  .faq__accordion-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+
+  .faq__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* POJEDYNCZY ELEMENT */
+  .faq__item {
+    background-color: #FFF0D3;
+    border-radius: 31px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+
+  .faq__item.is-active {
+    background-color: #FEE0AA;
+  }
+
+  /* PYTANIE */
+  .faq__question {
+    width: 100%;
+    padding: 27px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .faq__question-text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--nero);
+    text-align: left;
+  }
+
+  /* IKONKA + / X — TEN SAM ROZMIAR CO W MENU */
+  .faq__icon {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .faq__item.is-active .faq__icon {
+    transform: rotate(45deg);
+  }
+
+  /* ODPOWIEDŹ */
+  .faq__answer {
+    padding: 0 36px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--nero);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .faq__answer p {
+    padding-bottom: 27px;
+  }
+
+  .faq__item.is-active .faq__answer {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  /* GRAFIKA PYTAJNIKA */
+  .faq__image {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    right: -20px;
+    top: -20px;
+    opacity: 0.25;
+    transform: rotate(-17deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .faq__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ============================
+   SEKCJA PODPISZ PETYCJĘ
+   ============================ */
+
+   @media (max-width: 768px) {
+
+  .cta {
+    background-color: var(--bridal);
+    padding: 40px 20px 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta__inner {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* TYPOGRAFIA */
+  .cta__heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    color: var(--nero);
+  }
+
+  .cta__subheading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+    color: var(--nero);
+  }
+
+  .cta__text-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cta__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 135%;
+    text-align: center;
+    color: var(--boulder);
+    margin: 0;
+  }
+
+  /* PRZYCISK */
+  .cta__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--christine);
+    color: var(--bridal);
+    border-radius: 24px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  /* GRAFIKI — ZMIENIONE POZYCJE */
+  .cta__image--apple {
+    width: 160px;
+    top: 60%;
+    left: -40px;
+    z-index: 0;
+  }
+
+  .cta__image--broccoli {
+    width: 120px;
+    top: -20px;
+    right: 20px;
+    transform: rotate(30deg);
+    z-index: 0;
+  }
+
+  .cta__image--soup {
+    width: 140px;
+    top: 70%;
+    right: -30px;
+    transform: rotate(-15deg);
+    z-index: 0;
+  }
+
+  .cta__image--hand {
+    width: 100px;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 0;
+  }
+
+  .cta__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
