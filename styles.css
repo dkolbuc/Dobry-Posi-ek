@@ -1370,6 +1370,33 @@ body {
    MOBILE STYLES
    ============================ */
 
+@media (max-width: 768px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  section {
+    overflow: hidden;
+  }
+
+  .cta__inner,
+  .faq__inner,
+  .poll__inner,
+  .what-changes__inner,
+  .why-important__inner {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
 /* MOBILE NAV */
 
 @media (max-width: 768px) {
