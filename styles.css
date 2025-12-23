@@ -2635,6 +2635,7 @@ body {
     transition: transform 0.2s ease;
     margin-top: 20px;
     margin-bottom: 40px;
+    z-index: 2;
   }
 
   /* GRAFIKI — ZMIENIONE POZYCJE */
@@ -2664,7 +2665,7 @@ body {
   .cta__image--hand {
     width: 109px;
     bottom: 0%;
-    left: -12%;
+    left: -13%;
     transform: translateX(50%);
     z-index: 0;
   }
