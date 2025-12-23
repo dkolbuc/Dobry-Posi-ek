@@ -913,7 +913,7 @@ body {
 
 /* karty */
 .what-changes__card {
-  padding: 48px;
+  padding: 24px 48px;
   border-top-left-radius: 31px;
   border-top-right-radius: 31px;
 }
@@ -982,7 +982,7 @@ body {
   top: 85%;
   overflow: hidden;
   z-index: 1;
-  transform: rotate(15deg)
+  transform: rotate(15deg);
 }
 
 .what-changes__img-smaller {
@@ -1027,9 +1027,6 @@ body {
 /* styl przycisku */
 
 .poll__btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
   padding: 8px 24px;
   background-color: var(--christine);
   color: var(--bridal);
@@ -1980,7 +1977,7 @@ body {
 
   /* SEKCJA */
   .why-important {
-    padding: 40px 20px 80px 20px;
+    padding: 40px 20px 10px 20px;
     background: var(--bridal);
   }
 
@@ -1997,12 +1994,12 @@ body {
   /* GRAFIKA WYKRZYKNIKA W TLE */
   .why-important__image {
     position: absolute;
-    width: 260px;
-    height: 200px;
-    right: -40px;
-    top: -20px;
+    width: 406px;
+    height: 406px;
+    right: -55%;
+    top: -5%;
     transform: rotate(15deg);
-    opacity: 0.25;
+    opacity: 0.75;
     z-index: 0;
   }
 
@@ -2149,11 +2146,11 @@ body {
   /* GRAFIKA KAPUSTY */
   .why-important__cabbage {
     position: absolute;
-    width: 180px;
-    height: 180px;
-    left: -40px;
-    bottom: -40px;
-    opacity: 0.35;
+    width: 360px;
+    height: 360px;
+    left: 50%;
+    bottom: 0%;
+    opacity: 0.75;
     z-index: 0;
   }
 
@@ -2172,7 +2169,7 @@ body {
 
   .what-changes {
     background-color: var(--bridal);
-    padding: 40px 20px 80px 20px;
+    padding: 80px 20px 80px 20px;
     position: relative;
   }
 
@@ -2193,6 +2190,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-bottom: 20px;
   }
 
   .what-changes__heading {
@@ -2200,6 +2198,7 @@ body {
     font-weight: 700;
     line-height: 100%;
     margin: 0;
+    text-align: center;
   }
 
   .what-changes__subheading {
@@ -2208,13 +2207,14 @@ body {
     line-height: 100%;
     margin: 0;
     color: var(--nero);
+    text-align: center;
   }
 
   .what-changes__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 135%;
-    text-align: left;
+    text-align: center;
     color: var(--boulder);
     margin: 0;
   }
@@ -2222,14 +2222,16 @@ body {
   /* ŚRODKOWA KOLUMNA – GRAFIKA KIWI */
   .what-changes__col--middle {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 42%;
+    left: 37%;
+    transform: rotate(-270deg);
   }
 
   .what-changes__image {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 134px;
+    height: 134px;
     transform: scaleX(-1);
     z-index: 1;
   }
@@ -2245,16 +2247,14 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
   }
 
   .what-changes__card {
-    padding: 48px 24px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
   }
 
@@ -2288,11 +2288,11 @@ body {
     position: absolute;
     width: 180px;
     height: 180px;
-    left: -40px;
-    bottom: -20px;
+    left: -25%;
+    top: -10%;
     transform: rotate(-13deg);
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.75;
   }
 
   .what-changes__img-bigger {
@@ -2306,11 +2306,11 @@ body {
     position: absolute;
     width: 80px;
     height: 80px;
-    right: -20px;
-    bottom: -10px;
+    right: -5%;
+    top: 52%;
     transform: rotate(15deg);
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.75;
   }
 
   .what-changes__img-smaller {
@@ -2328,7 +2328,7 @@ body {
 
   .poll {
     background: var(--bridal);
-    padding: 40px 20px 80px 20px;
+    padding: 40px 20px 40px 20px;
     overflow: hidden;
   }
 
@@ -2349,6 +2349,7 @@ body {
     line-height: 100%;
     color: var(--nero);
     margin: 0;
+    text-align: center;
   }
 
   .poll__text {
@@ -2367,14 +2368,15 @@ body {
     margin-bottom: 12px;
   }
 
+  ol {
+    padding-inline-start: 15px;
+  }
+
   .poll__text strong {
     font-weight: 700;
   }
 
   .poll__btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
     padding: 8px 24px;
     background-color: var(--christine);
     color: var(--bridal);
@@ -2385,13 +2387,14 @@ body {
     cursor: pointer;
     width: fit-content;
     max-width: 100%;
+    text-align: center;
   }
 
   /* OBRAZKI – UKŁAD JEDEN POD DRUGIM */
   .poll__grid {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
     justify-content: center;
     align-items: center;
   }
@@ -2437,16 +2440,15 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* <-- wycentrowanie nagłówka */
-    gap: 32px; /* <-- odstęp między nagłówkiem a akordeonem */
-  }
+    align-items: center;
+    }
 
   .faq__heading {
     font-size: 42px;
     font-weight: 700;
     line-height: 100%;
-    margin: 0;
-    text-align: center; /* <-- dodatkowe zabezpieczenie */
+    margin-top: 10px;
+    text-align: center;
   }
 
   /* WRAPPER AKORDEONU */
@@ -2544,11 +2546,11 @@ body {
   /* GRAFIKA PYTAJNIKA */
   .faq__image {
     position: absolute;
-    width: 140px;
-    height: 140px;
-    right: -20px;
-    top: -20px;
-    opacity: 0.25;
+    width: 203px;
+    height: 203px;
+    right: 0%;
+    top: -15%;
+    opacity: 0.75;
     transform: rotate(-17deg);
     pointer-events: none;
     z-index: 0;
@@ -2637,16 +2639,16 @@ body {
 
   /* GRAFIKI — ZMIENIONE POZYCJE */
   .cta__image--apple {
-    width: 160px;
-    top: 60%;
-    left: -40px;
+    width: 140px;
+    top: -15%;
+    left: -22%;
     z-index: 0;
   }
 
   .cta__image--broccoli {
-    width: 120px;
-    top: -20px;
-    right: 20px;
+    width: 100px;
+    top: -33%;
+    right: 0;
     transform: rotate(30deg);
     z-index: 0;
   }
@@ -2654,15 +2656,15 @@ body {
   .cta__image--soup {
     width: 140px;
     top: 70%;
-    right: -30px;
+    right: -10%;
     transform: rotate(-15deg);
     z-index: 0;
   }
 
   .cta__image--hand {
-    width: 100px;
-    bottom: -20px;
-    right: 50%;
+    width: 109px;
+    bottom: 0%;
+    left: -12%;
     transform: translateX(50%);
     z-index: 0;
   }
