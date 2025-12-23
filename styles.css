@@ -1529,9 +1529,9 @@ body {
     text-align: center;
   }
 
-  /* Grafika centralna — 20px od lewej i prawej */
+  /* Grafika centralna */
   .hero__graphic-center {
-    width: calc(100% - 40px);
+    width: calc(100% - 5px);
     height: auto;
     margin: 0 auto;
   }
