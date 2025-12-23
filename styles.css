@@ -2635,14 +2635,14 @@ body {
     transition: transform 0.2s ease;
     margin-top: 20px;
     margin-bottom: 40px;
-    z-index: 2;
+    z-index: 3;
   }
 
   /* GRAFIKI — ZMIENIONE POZYCJE */
   .cta__image--apple {
     width: 140px;
     top: -15%;
-    left: -22%;
+    left: -24%;
     z-index: 0;
   }
 
