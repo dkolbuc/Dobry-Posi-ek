@@ -1119,6 +1119,13 @@ body {
 }
 
 /* sekcja FAQ */
+
+/* ukrycie sekcji */
+
+#faq {
+  display: none;
+}
+
 .faq {
   background-color: var(--bridal);
   padding: 50px 0;
