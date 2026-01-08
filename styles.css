@@ -1604,7 +1604,7 @@ body {
 @media (max-width: 768px) {
 
   .success {
-    padding: 60px 20px 0px;
+    padding: 40px 20px 0px;
   }
 
   .success__inner {
