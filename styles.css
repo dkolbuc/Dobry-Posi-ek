@@ -2648,7 +2648,7 @@ body {
 
   .cta__image--broccoli {
     width: 100px;
-    top: -33%;
+    top: -15%;
     right: 0;
     transform: rotate(30deg);
     z-index: 0;
