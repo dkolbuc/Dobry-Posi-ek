@@ -1588,7 +1588,7 @@ body {
   .hero-side__image {
     width: 145px;
     right: -12%;
-    top: 86%;
+    top: 85%;
     z-index: 2;
   }
 
@@ -2578,7 +2578,7 @@ body {
 
   .cta {
     background-color: var(--bridal);
-    padding: 40px 20px 80px 20px;
+    padding: 80px 20px 80px 20px;
     position: relative;
     overflow: hidden;
   }
@@ -2655,7 +2655,7 @@ body {
 
   .cta__image--broccoli {
     width: 100px;
-    top: -15%;
+    top: -31%;
     right: 0;
     transform: rotate(30deg);
     z-index: 0;
