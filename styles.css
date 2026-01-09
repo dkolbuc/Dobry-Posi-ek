@@ -1058,9 +1058,6 @@ body {
   justify-content: center;
 }
 
-.poll__bottom {
-  padding-top: 48px;
-
 /* obrazki badań */
 .poll__img {
   width: 100%;
@@ -2416,9 +2413,6 @@ body {
     justify-content: center;
     width: 100%;
   }
-
-  .poll_bottom {
-    padding-top: 32px;
 
   .poll__img {
     width: 100%;
