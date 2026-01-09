@@ -1024,6 +1024,10 @@ body {
   color: var(--boulder);
 }
 
+.poll__button-wrapper {
+  padding: 20px 0;
+}
+
 /* styl przycisku */
 
 .poll__btn {
